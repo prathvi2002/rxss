@@ -1,0 +1,3 @@
+http://site.local:3000/?data=sdf
+https://labs.hackxpert.com/RXSS/GET/22.php?fname=sdf
+https://in.search.yahoo.com/search;_ylt=Awr1SgtW6yFokbslLwy6HAx.;_ylc=X1MDMjExNDcyMzAwMgRfcgMyBGZyAwRmcjIDcDpzLHY6c2ZwLG06c2ItdG9wB%20%20%20%20%20%20GdwcmlkA2tLUjJVbC55U1BxeTl4VWJBZEJDbEEEbl9yc2x0AzAEbl9zdWdnAzAEb3JpZ2luA2luLnNlYXJjaC55YWhvby5jb20EcG9zAzAEcHFzdHIDBHBxc3RybAMwBHFzdHJsAzUEcXVlcnkD%20%20%20%20%20%20c2RmeHgEdF9zdG1wAzE3NDcwNTM0MDY-?p=sdfxx&fr=sfp&fr2=p%3As%2Cv%3Asfp%2Cm%3Asb-top&iscqry=&guccounter=1

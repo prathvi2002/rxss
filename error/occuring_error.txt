@@ -1,0 +1,22 @@
+Exception in thread Thread-118 (check):
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/threading.py", line 1073, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.12/threading.py", line 1010, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/ishu/dev/AutoXSS2/pxss/pxss.py", line 577, in check
+    parameter_results = check_each_param_for_unfiltered_char(url=url)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ishu/dev/AutoXSS2/pxss/pxss.py", line 417, in check_each_param_for_unfiltered_char
+    unfiltered_characters_detected = unfiltered_characters_func(modified_url=url, target_param=parameter, proxy_url=proxy_url)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ishu/dev/AutoXSS2/pxss/pxss.py", line 264, in unfiltered_characters_func
+    detected_payload_reflection = detect_payload_reflection(url=modified_url, target_param=target_param, payload=char_ref_check_payload, proxy_url=proxy_url)
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ishu/dev/AutoXSS2/pxss/pxss.py", line 156, in detect_payload_reflection
+    modified_url = modified_url_param(url, target_param=target_param, replace_value=payload)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ishu/dev/AutoXSS2/pxss/pxss.py", line 112, in modified_url_param
+    path_embedded_params = parsed.params.split(';')  # returns list of path-embedded parameters. e.g. ['param1=value1', 'param2=value2']
+                           ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: a bytes-like object is required, not 'str'
