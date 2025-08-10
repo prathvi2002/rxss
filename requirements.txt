@@ -1,2 +1,5 @@
-Requests==2.25.1
-urllib3==1.26.20
+argcomplete==3.1.4
+beautifulsoup4==4.6.0
+Pygments==2.19.2
+Requests==2.32.4
+urllib3==2.5.0
