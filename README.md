@@ -8,3 +8,4 @@ Effective usage example:
 - Option to follow redirect and check for unfiltered special characeters in those parameters.
 - Add pxss option to check only for specific special characters.
 - `--refcheck` not working maybe, check and fix it.
+- Add an option to provide multiple proxies to cycle requests through to avoid rate limiting.
