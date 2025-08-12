@@ -373,7 +373,7 @@ def unfiltered_characters_func(modified_url, target_param, proxy_url=None):  #- 
             char_ref_check_payload_encoded = str(quote(char_ref_check_payload, safe="/$|()`:;{}"))  # from special characters list these are the characters that firefox does not automatically URL encode / $ | ( ) ` : ; { }  that's why not URL encoding them.
 
             first_try_fail = None  # reinitialize first attempt failure check flag, since could have been set upside during content type checking
-            detected_payload_reflection = detect_payload_reflection(url=modified_url, target_param=target_param, payload=char_ref_check_payload_encoded, proxy_url=proxy_url)
+            detected_payload_reflection = detect_payload_reflection(url=modified_url, target_param=target_param, payload=char_ref_check_payload, proxy_url=proxy_url)
             # On the first request, the request might fail coz of connection error, server error, or unexpected response; causing detect_payload_reflection() to return None. Since we can't unpack None into a tuple, we first check if the function returned a tuple value by checking if it didn't return None before attempting unpacking.
             if detected_payload_reflection is not None:
                 response_body, raw_response = detected_payload_reflection
