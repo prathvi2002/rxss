@@ -658,7 +658,7 @@ if __name__ == "__main__":
         PINK = "\033[95m"
         RESET = "\033[0m"
 
-    print("Proxy URL:", proxy_url)
+    # print("Proxy URL:", proxy_url)
     # print("Consistency:", consistency)
 
     cwd = os.path.abspath(os.getcwd())
