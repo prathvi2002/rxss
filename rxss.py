@@ -353,9 +353,9 @@ def unfiltered_characters_func(modified_url, target_param, proxy_url=None):  #- 
     elif response_is_html is True:
         if worthy_only is True:
             if refcheck:
-                special_characters = ["<", ">", "\"", "'", "x"]
+                special_characters = ["<", ">", "\"", "x"]
             else:
-                special_characters = ["<", ">", "\"", "'"]
+                special_characters = ["<", ">", "\""]
         else:
             if refcheck:
                 special_characters = ["<", ">", "\"", "'", "/", "$", "|", "(", ")", "`", ":", ";", "{", "}", "x"]
